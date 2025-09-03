@@ -11,17 +11,17 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-400 to-yellow-300 flex items-center justify-center text-deep shadow-lg">
-            <span className="font-extrabold text-sm">RH</span>
+          <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-400 to-blue-600 flex items-center justify-center text-deep-blue shadow-lg">
+            <span className="font-extrabold text-sm">Code.</span>
           </div>
-          <span className="font-semibold text-lg">Rizki Herbalindo — Atelier Digital</span>
+          {/* <span className="font-semibold text-lg">Ngoding</span> */}
         </div>
 
         <div className="hidden md:flex items-center gap-6 text-sm text-gray-700">
-          <a href="#package" className="hover:text-gray-900">The 1B Package</a>
-          <a href="#process" className="hover:text-gray-900">Process</a>
-          <a href="#portfolio" className="hover:text-gray-900">Portfolio</a>
-          <a href="#contact" className="px-4 py-2 rounded-full bg-amber-400 text-green-900 font-semibold hover:brightness-95">Talk to Concierge</a>
+          <a href="#package" className="hover:text-gray-900">Beranda</a>
+          <a href="#process" className="hover:text-gray-900">Tentang Kami</a>
+          <a href="#portfolio" className="hover:text-gray-900">Sosial Media</a>
+          <a href="#contact" className="px-4 py-2 rounded-full bg-blue-500 text-white font-semibold hover:brightness-95">Hubungi Kami</a>
         </div>
       </div>
     </motion.nav>

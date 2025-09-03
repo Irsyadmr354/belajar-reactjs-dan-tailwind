@@ -1,14 +1,17 @@
 @import "tailwindcss";
 
 :root{
-  --gold: #f6c84c;
-  --deep: #072227;
+  --blue: #3B82F6;        /* menggantikan --gold */
+  --deep-blue: #0B1721;   /* menggantikan --deep, untuk teks gelap / kontras */
   --glass: rgba(255,255,255,0.06);
 }
 
 /* optional font */
-body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+body { 
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; 
+}
 
+/* Hero section gradient dengan nuansa biru gelap */
 .hero-fade {
-  background: linear-gradient(180deg, rgba(7,34,39,0.75), rgba(7,34,39,0.6));
+  background: linear-gradient(180deg, rgba(11,23,33,0.75), rgba(11,23,33,0.6));
 }

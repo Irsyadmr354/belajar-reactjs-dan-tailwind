@@ -1,18 +1,50 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { FaRocket, FaHandshake, FaLock, FaGlobe } from "react-icons/fa";
 
-export default function CTA() {
+const items = [
+  { icon: <FaRocket size={28} className="text-blue-500"/>, title: "Launch Velocity", desc: "From idea to live ReactJS build — fast, polished, and scalable." },
+  { icon: <FaHandshake size={28} className="text-blue-500"/>, title: "Concierge Collaboration", desc: "Dedicated project partner, weekly updates, and code reviews." },
+  { icon: <FaLock size={28} className="text-blue-500"/>, title: "Enterprise-grade Security", desc: "Secure React/Tailwind infra, auth, and compliance-ready." },
+  { icon: <FaGlobe size={28} className="text-blue-500"/>, title: "Global Readiness", desc: "Responsive, localized, and performance-optimized for all users." },
+];
+
+export default function ValueProposition() {
   return (
-    <section id="contact" className="py-24 bg-gradient-to-r from-amber-400 to-green-800 text-white">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-6 text-center">
-        <motion.h3 initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} className="text-4xl font-extrabold">Ready to commission a masterpiece?</motion.h3>
-        <motion.p initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} transition={{delay:0.15}} className="mt-4 max-w-2xl mx-auto text-lg">
-          Book a private briefing with our executive atelier. We respect confidentiality and craft — NDA available on request.
+        <motion.h2 
+          initial={{opacity:0,y:20}} 
+          whileInView={{opacity:1,y:0}} 
+          transition={{duration:0.6}} 
+          className="text-3xl font-extrabold text-blue-800"
+        >
+          What Our ReactJS + TailwindCSS Package Unlocks
+        </motion.h2>
+
+        <motion.p 
+          initial={{opacity:0,y:20}} 
+          whileInView={{opacity:1,y:0}} 
+          transition={{duration:0.6, delay:0.15}} 
+          className="mt-4 text-gray-600 max-w-2xl mx-auto"
+        >
+          A boutique ReactJS engagement that treats your product like a premium digital asset — we deliver not just a site, but a scalable, interactive experience.
         </motion.p>
 
-        <div className="mt-8 flex justify-center gap-4">
-          <a href="mailto:hello@rizkiherbalindo.com?subject=Private%20Briefing%20Request" className="px-6 py-3 bg-white text-green-900 rounded-full font-semibold shadow">Email Executive</a>
-          <a href="#contact" className="px-6 py-3 border rounded-full text-white">Schedule Call</a>
+        <div className="grid md:grid-cols-4 gap-8 mt-10">
+          {items.map((it, idx) => (
+            <motion.div 
+              key={idx} 
+              initial={{opacity:0,y:20}} 
+              whileInView={{opacity:1,y:0}} 
+              transition={{duration:0.6, delay:idx*0.12}} 
+              className="p-6 rounded-xl shadow-lg bg-gradient-to-tr from-white to-blue-50"
+            >
+              <div className="mb-4">{it.icon}</div>
+              <h4 className="font-semibold text-blue-700">{it.title}</h4>
+              <p className="mt-2 text-sm text-gray-600">{it.desc}</p>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
