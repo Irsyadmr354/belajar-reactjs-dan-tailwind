@@ -10,7 +10,7 @@ export default function Navbar() {
       className="fixed w-full z-50 top-0 left-0"
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 bg-sky-100">
           <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-400 to-blue-600 flex items-center justify-center text-deep-blue shadow-lg">
             <span className="font-extrabold text-sm">CSS</span>
           </div>
