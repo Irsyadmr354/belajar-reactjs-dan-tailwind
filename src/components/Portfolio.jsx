@@ -1,10 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
+import dashboard from '../assets/dashboard.webp';
+import ecommerce from '../assets/e-commerce.webp';
+import portfolio from '../assets/portfolio.png';
 
 const items = [
-  { title: "Modern Dashboard", desc: "Interaktif, responsif, dan real-time analytics", img: "/assets/dashboard.webp" },
-  { title: "E-Commerce Landing Page", desc: "Produk showcase dengan animasi dan UI elegan", img: "/assets/e-commerce.webp" },
-  { title: "Portfolio Website", desc: "Clean design dengan interaksi modern dan responsif", img: "/assets/portfolio.png" },
+  { title: "Modern Dashboard", desc: "Interaktif, responsif, dan real-time analytics", img: dashboard },
+  { title: "E-Commerce Landing Page", desc: "Produk showcase dengan animasi dan UI elegan", img: ecommerce },
+  { title: "Portfolio Website", desc: "Clean design dengan interaksi modern dan responsif", img: portfolio },
 ];
 
 
