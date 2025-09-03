@@ -2,22 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const items = [
-  { 
-    title: "Modern Dashboard", 
-    desc: "Interaktif, responsif, dan real-time analytics", 
-    img: "../assets/dashboard.webp" 
-  },
-  { 
-    title: "E-Commerce Landing Page", 
-    desc: "Produk showcase dengan animasi dan UI elegan", 
-    img: "../assets/e-commerce.webp" 
-  },
-  { 
-    title: "Portfolio Website", 
-    desc: "Clean design dengan interaksi modern dan responsif", 
-    img: "../assets/portfolio.png" 
-  },
+  { title: "Modern Dashboard", desc: "Interaktif, responsif, dan real-time analytics", img: "/assets/dashboard.webp" },
+  { title: "E-Commerce Landing Page", desc: "Produk showcase dengan animasi dan UI elegan", img: "/assets/e-commerce.webp" },
+  { title: "Portfolio Website", desc: "Clean design dengan interaksi modern dan responsif", img: "/assets/portfolio.png" },
 ];
+
 
 export default function Portfolio() {
   return (
