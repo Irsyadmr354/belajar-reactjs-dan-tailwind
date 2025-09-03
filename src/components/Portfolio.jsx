@@ -5,17 +5,17 @@ const items = [
   { 
     title: "Modern Dashboard", 
     desc: "Interaktif, responsif, dan real-time analytics", 
-    img: "https://images.unsplash.com/photo-1601597112762-2a1b3a9df2f1?auto=format&fit=crop&w=800&q=60" 
+    img: "../assets/dashboard.webp" 
   },
   { 
     title: "E-Commerce Landing Page", 
     desc: "Produk showcase dengan animasi dan UI elegan", 
-    img: "https://images.unsplash.com/photo-1616627980974-b9efb4f6a9fc?auto=format&fit=crop&w=800&q=60" 
+    img: "../assets/e-commerce.webp" 
   },
   { 
     title: "Portfolio Website", 
     desc: "Clean design dengan interaksi modern dan responsif", 
-    img: "https://images.unsplash.com/photo-1605902711622-cfb43c4436b7?auto=format&fit=crop&w=800&q=60" 
+    img: "../assets/portfolio.png" 
   },
 ];
 
@@ -28,7 +28,7 @@ export default function Portfolio() {
           whileInView={{opacity:1,y:0}} 
           className="text-3xl font-extrabold text-center text-blue-800"
         >
-          Selected Case Studies
+          Portofolio ReactJS & TailwindCSS
         </motion.h3>
 
         <div className="mt-8 grid md:grid-cols-3 gap-6">

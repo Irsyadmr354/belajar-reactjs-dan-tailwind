@@ -10,8 +10,8 @@ export default function The1BPackage() {
             <div className="p-8 md:p-12 grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <div className="inline-flex items-center gap-4">
-                  <div className="text-blue-500 text-3xl font-extrabold">IDR 1,000,000,000</div>
-                  <div className="text-sm text-gray-500">— Premium ReactJS + TailwindCSS Build</div>
+                  {/* <div className="text-blue-500 text-3xl font-extrabold">IDR 1,000,000,000</div> */}
+                  <div className="text-blue-500 text-3xl font-extrabold">Premium ReactJS + TailwindCSS Build</div>
                 </div>
 
                 <h3 className="mt-6 text-2xl font-bold text-gray-900">What you get — end to end</h3>
